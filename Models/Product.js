@@ -2,12 +2,7 @@ import mongoose from 'mongoose';
 
 const Productschema = new mongoose.Schema({
     images: {
-        type: [
-            {
-                url: String,  // Assuming images have a URL field. Modify as needed.
-                alt: String   // Optional: Alt text for images.
-            }
-        ],
+        type: [String],
         default: []
     },
     name: {
